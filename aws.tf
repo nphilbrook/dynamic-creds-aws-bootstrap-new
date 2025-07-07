@@ -68,8 +68,7 @@ resource "aws_iam_role" "tf_role" {
        },
        "StringLike": {
          "${var.tf_hostname}:sub": [
-           "organization:${var.tf_organization_name}:project:${var.tf_project_name}:workspace:*:run_phase:*",
-           "organization:${var.tf_organization_name}:project:default-project:workspace:test-aws-multi:run_phase:*"
+           "organization:${var.tf_organization_name}:project:${var.tf_project_name}:workspace:*:run_phase:*"
          ]
        }
      }
